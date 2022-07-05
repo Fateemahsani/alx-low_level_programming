@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * print_alphabet -> print the lower case
+ * print_alphabet -> print lowercase alphabets
  */
-
 void print_alphabet(void)
 {
 	int j;
@@ -11,5 +10,5 @@ void print_alphabet(void)
 	{
 		_putchar('j');
 	}
-	_putchar('/n');
+	putchar('\n');
 }
