@@ -1,12 +1,11 @@
-#!/bin/bash
 #include <stdio.h>
 /**
- * main -enter point
+ * main - enter point
  *
- * Return: Always 0 (Success)
+ * Return: 0 after after printing the function
  */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	return(0);
+	return (0);
 }
