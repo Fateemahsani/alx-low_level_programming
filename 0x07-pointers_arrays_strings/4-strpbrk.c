@@ -2,25 +2,23 @@
 
 /**
  * _strpbrk - searches a string for any of a set of bytes
- * @s: string to search
- * @accept: set of bytes to search for
- * Description: retruns first occurrence in a string
- * Return: pointer to first instance of string.
+ * @s: source string
+ * @accept: set of bytes to be searched for
+ * Return: pointer to the matched byte
  */
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j;
+	int index;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s)
 	{
-		for (j = 0; accept[j] != '\0'; j++)
+		for (index = 0; accept[index]; index++)
 		{
-			if (accept[j] == s[i])
-			{
-				return (&s[i]);
-			}
+			if (*s == accept[index])
+				return (s);
 		}
+		s++;
 	}
-	return (NULL);
+	return ('\0');
 }
